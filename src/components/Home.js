@@ -1,3 +1,10 @@
+import React from 'react'; 
+import { useState} from "react"
+import { useContext } from 'react';
+// import { Link } from 'react-router-dom';
+import {NavigationContext} from "../data/NavigationContext"
+import YourProjects from './YourProjects';
+
 function Home(props) {
 
   const [currentPage,setCurrentPage] = useContext(NavigationContext)
@@ -11,7 +18,7 @@ function Home(props) {
   );
 
   }
-  
+
   export default Home
   
 
