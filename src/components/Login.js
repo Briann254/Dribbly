@@ -1,5 +1,9 @@
-import { useRef, useState, useEffect } from 'react'
-const Log = () =>{
+import { useRef, useState, useEffect, useContext } from 'react'
+import AuthContext from "./context/AuthProvider"
+import axios from './api/axios';
+const LOGIN_URL = '/auth'
+const Login = () =>{
+  const { setAuth }= useContext(AuthContext)
   const userRef = useRef();
   const errRef = useRef();
 
@@ -72,4 +76,4 @@ const Log = () =>{
   )
 }
 
-export default Log;
+export default Login;

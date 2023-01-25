@@ -1,12 +1,9 @@
-import Log from './components/Log';
-
-
-
+import Login from './components/Log';
 function App() {
 
   return (
     <main className="App">
-      <Log />
+      <Login />
     </main>
 
   );
