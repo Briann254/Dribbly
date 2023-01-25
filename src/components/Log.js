@@ -13,14 +13,31 @@ const Log = () =>{
   }, [])
 
   useEffect(() => {
-
+        setErrMsg('')
   }, [user, pwd])
   
+  const handleSubmit = async (e) => {
+      e.preventDefault();
+      console.log(user, pwd)
+      setSuccess(true)
+      setPwd('');
+      setSuccess(true);
+  }
   return (
+    <>
+        {success ? (
+          <section>
+             <h1>You are successfully logged in</h1>
+             <br />
+             <p>
+               Here is your profile
+             </p>
+          </section>
+        ) : (
     <section>
       <p ref={errRef} className={errMsg}></p>
       <h1> Sign In</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor= "username">Username</label>
         <input 
                 type="text"
@@ -40,8 +57,18 @@ const Log = () =>{
                 value={pwd}
                 required
                 />
-      </form>
+                <button>Sign in</button>
+      </form >
+      <p>
+        Want to join our community? <br />
+        <span className="line">
+          {/*put router link here*/}
+          <a href="#">Sign Up</a>
+        </span>
+      </p>
     </section>
+        )}
+        </>
   )
 }
 
