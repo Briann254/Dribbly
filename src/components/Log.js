@@ -1,9 +1,39 @@
-import React from 'react'
+import { useRef, useState, useEffect } from 'react'
+const Log = () =>{
+  const userRef = useRef();
+  const errRef = useRef();
 
-function Log() {
+  const [user, setUser] =useState('');
+  const [pwd, setPwd] = useState('');
+  const [errMsg, setErrMsg] = useState('');
+  const [success, setSuccess] = useState(false);
+
+  useEffect(()=> {
+
+  }, [])
+
+  useEffect(() => {
+
+  }, [user, pwd])
+  
   return (
-    <div>Log</div>
+    <section>
+      <p ref={errRef} className={errMsg}></p>
+      <h1> Sign In</h1>
+      <form>
+        <label htmlFor= "username">Username</label>
+        <input 
+                type="text"
+                id="" 
+                ref={userRef}
+                autoComplete="off"
+                onChange={(e) => setUser(e.target.value)}
+                value={user}
+                required
+                />
+      </form>
+    </section>
   )
 }
 
-export default Log
+export default Log;
