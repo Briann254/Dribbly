@@ -2,6 +2,7 @@ import { useRef, useState, useEffect, useContext } from 'react'
 import AuthContext from "./context/AuthProvider"
 import axios from './api/axios';
 const LOGIN_URL = '/auth'
+
 const Login = () =>{
   const { setAuth }= useContext(AuthContext)
   const userRef = useRef();
@@ -22,7 +23,11 @@ const Login = () =>{
   
   const handleSubmit = async (e) => {
       e.preventDefault();
-      console.log(user, pwd)
+      try {
+        const response = await axios.post
+      } catch (err){
+
+      }
       setSuccess(true)
       setPwd('');
       setSuccess(true);
