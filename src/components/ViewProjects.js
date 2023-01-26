@@ -13,9 +13,9 @@ function ViewProject(props){
     useEffect(()=>{
       setPage(projectsData.map((project) =>{
         return (
-          <div>
+          <div id='display-items'>
           <h2>{project.title}</h2>
-        <img key={project.id}src={project.images.normal}></img>
+        <img key={project.id}src={project.images.normal} ></img>
         <p>{project.description.replace(/[<p></p>]/,"")}</p>
         <DeletePosts singleShot= {project}/>
         <UpdateYourProject singleShot={project}/>
@@ -27,7 +27,7 @@ function ViewProject(props){
       
     },[projectsData])
   return (
-    <div>
+    <div className='img'>
       {page}
     
     </div>

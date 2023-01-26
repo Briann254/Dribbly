@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useContext } from "react";
 import { YourProjectsDataContext } from "../data/YourProjectsContext";
 function CreateProject(props) {
@@ -12,13 +12,13 @@ function CreateProject(props) {
   console.log(projectsData);
   function handleSubmit(e) {
     e.preventDefault();
-    setProjeData([...projectsData, posts]);
+    setProjeData([posts, ...projectsData]);
   }
   console.log(setPosts);
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div >
+      <form onSubmit={handleSubmit} id='createProject'>
         <input
           type="text"
           placeholder="Title"
@@ -35,12 +35,13 @@ function CreateProject(props) {
           onChange={(e) => {
             setPosts({
               ...posts,
-              title: e.target.value,
+              description: e.target.value,
             });
           }}
         ></input>
         <input
           type="url"
+          placeholder="Enter image url"
           onChange={(e) => {
             setPosts({
               ...posts,

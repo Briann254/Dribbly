@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+#createProject{
+  border-radius: 20px;
+}
+
+.img{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 180px;
+  
+}
