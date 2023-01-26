@@ -5,13 +5,19 @@ import Home from './components/Layout/pages';
 
 
 
+import { NavigationContext } from './data/NavigationContext';
+import {useContext} from 'react';
 function App() {
+  const [currentPage,setCurrentPage] = useContext(NavigationContext)
   return (
 	<Router>
 		
 		<Home />
 	</Router>
   )
+    <>
+    {currentPage}
+   </>
+  );
 }
-
 export default App;
