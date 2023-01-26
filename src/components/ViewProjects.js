@@ -16,7 +16,7 @@ function ViewProject(props){
           <div id='display-items'>
           <h2>{project.title}</h2>
         <img key={project.id}src={project.images.normal} ></img>
-        <p>{project.description.replace(/[<p></p>]/,"")}</p>
+        <p>{project.description.replace(/[<p/>h1]/g,"")}</p>
         <DeletePosts singleShot= {project}/>
         <UpdateYourProject singleShot={project}/>
 

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Video from "../Videos/video.mp4";
 import {Button} from '../ButtonElement';
+import { Link } from "react-router-dom";
 import { 
     HeroContainer,
     HeroBg, 
@@ -34,13 +35,16 @@ const onHover = () => {
         
         </HeroP>
         <HeroBtnWrapper>
-            <Button to = 'Signup' onMouseEnter = {onHover} onMouseLeave = {onHover}>
+          <Link to="/yourprojects">
+            <button to = 'Signup' onMouseEnter = {onHover} onMouseLeave = {onHover} onClick={()=>{
+                console.log("LOL")
+            }}>
             Get Started{hover ? <ArrowForward/> : <ArrowRight/>}
-
-            </Button>
+            </button>
+            </Link>
+         
         </HeroBtnWrapper>
      </HeroContent>
-
     </HeroContainer>
   )
 }

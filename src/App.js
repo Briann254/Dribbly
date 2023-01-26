@@ -1,18 +1,19 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './components/Layout/pages';
+import YourProjects from './components/YourProjects';
 
-
-
-import { NavigationContext } from './data/NavigationContext';
-import {useContext} from 'react';
-function App() {
-  const [currentPage,setCurrentPage] = useContext(NavigationContext)
+  function App() {
   return (
 	<Router>
-		 {currentPage}
-		<Home />
+    
+   <Routes>
+   <Route exact path="/" element={<Home /> }/>
+    <Route path="/yourprojects" element={<YourProjects/>}/>
+   
+    </Routes>
+		
 	</Router>
   )
    
