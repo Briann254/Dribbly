@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Video from "../Videos/video.mp4";
-import {Button} from '../../ButtonElement';
+import {Button} from '../ButtonElement';
 import { 
     HeroContainer,
     HeroBg, 
