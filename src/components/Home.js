@@ -1,32 +1,23 @@
-import React from 'react';
+
+import React from 'react'; 
+import { useState} from "react"
+import { useContext } from 'react';
+// import { Link } from 'react-router-dom';
+import {NavigationContext} from "../data/NavigationContext"
+import YourProjects from './YourProjects';
 
 function Home(props) {
 
-  const [currentPage,setCurrentPage] = useContext(NavigationContext)
-  console.log(currentPage)
+const [currentPage,setCurrentPage] = useContext(NavigationContext)
+console.log(currentPage)
 
-  return (
-  <div>
-  <h1>Home page</h1>
-  <button onClick={()=>setCurrentPage(<YourProjects/>)}>Go to your projects</button>
-  </div>
-  );
+return (
+<div>
+<h1>Home page</h1>
+<button onClick={()=>setCurrentPage(<YourProjects/>)}>Go to your projects</button>
+</div>
+);
 
-<<<<<<< HEAD
-function Home() {
-  return (
-    <div>
-      <h1>Welcome to Dribbly</h1>
-      <p>Hello,</p>
-    </div>
-  )
 }
 
-=======
-  }
->>>>>>> 9dde7e7b06b9dfe01d75866497521fcf505df8f0
-
-  export default Home
-  
-
-
+export default Home
