@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { YourProjectsDataContext } from '../data/YourProjectsContext';
 import DeletePosts from './DeletePosts'
+import UpdateYourProject from './UpdateYourProject';
 
 function ViewProject(props){
   const [projectsData,setProjeData] = useContext(YourProjectsDataContext)
@@ -17,6 +18,8 @@ function ViewProject(props){
         <img key={project.id}src={project.images.normal}></img>
         <p>{project.description.replace(/[<p></p>]/,"")}</p>
         <DeletePosts singleShot= {project}/>
+        <UpdateYourProject singleShot={project}/>
+
               </div>
               
         )
