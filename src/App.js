@@ -11,13 +11,10 @@ function App() {
   const [currentPage,setCurrentPage] = useContext(NavigationContext)
   return (
 	<Router>
-		
+		 {currentPage}
 		<Home />
 	</Router>
   )
-    <>
-    {currentPage}
-   </>
-  );
+   
 }
 export default App;
