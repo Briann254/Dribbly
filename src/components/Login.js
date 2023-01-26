@@ -1,16 +1,14 @@
-import { useRef, useState, useEffect, useContext } from 'react'
-import AuthContext from "./context/AuthProvider"
-import axios from './api/axios';
-const LOGIN_URL = '/auth'
+import { useRef, useState, useEffect, } from 'react'
+import axios from 'axios';
 
 const Login = () =>{
-  const { setAuth }= useContext(AuthContext)
   const userRef = useRef();
   const errRef = useRef();
 
   const [user, setUser] =useState('');
   const [pwd, setPwd] = useState('');
   const [errMsg, setErrMsg] = useState('');
+  const [posts, setPosts] = useState([]);
   const [success, setSuccess] = useState(false);
 
   useEffect(()=> {
@@ -20,18 +18,21 @@ const Login = () =>{
   useEffect(() => {
         setErrMsg('')
   }, [user, pwd])
+
+  useEffect(()=> {
+    let accessToken = "4d66290d1ae13706dab6b0b398ff3d5312f85e90d8e495566fc8675ac8027f2f"
+    axios.get('https://api.dribbble.com/v2/user/shots?access_token='+ accessToken)
+    .then(res => setPosts(res.data))
+    .catch(err =>{console.log(err)})
+    }, [])
   
   const handleSubmit = async (e) => {
       e.preventDefault();
-      try {
-        const response = await axios.post
-      } catch (err){
-
-      }
-      setSuccess(true)
+      setUser('');
       setPwd('');
-      setSuccess(true);
-  }
+      setSuccess(true)
+      
+      }
   return (
     <>
         {success ? (
@@ -41,6 +42,12 @@ const Login = () =>{
              <p>
                Here is your profile
              </p>
+             <ul>
+              {
+                posts.map(data => <li key={posts.id}>{posts.projects}</li>)
+              }
+             </ul>
+
           </section>
         ) : (
     <section>

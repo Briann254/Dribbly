@@ -1,0 +1,6 @@
+useEffect(()=> {
+  let accessToken = "4d66290d1ae13706dab6b0b398ff3d5312f85e90d8e495566fc8675ac8027f2f"
+  axios.get('https://api.dribbble.com/v2/user/shots?access_token='+ accessToken)
+  .then(res => setData(res.data))
+  .catch(err =>{console.log(err)})
+  }, [])
