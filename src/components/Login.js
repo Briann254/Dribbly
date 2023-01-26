@@ -15,14 +15,11 @@ const Login = () =>{
 
   }, [])
 
-  useEffect(() => {
-        setErrMsg('')
-  }, [user, pwd])
-
   useEffect(()=> {
     let accessToken = "4d66290d1ae13706dab6b0b398ff3d5312f85e90d8e495566fc8675ac8027f2f"
-    axios.get('https://api.dribbble.com/v2/user/shots?access_token='+ accessToken)
+    axios.get('https://api.dribbble.com/v2/user?access_token='+ accessToken)
     .then(res => setPosts(res.data))
+    
     .catch(err =>{console.log(err)})
     }, [])
   
@@ -44,7 +41,7 @@ const Login = () =>{
              </p>
              <ul>
               {
-                posts.map(data => <li key={posts.id}>{posts.projects}</li>)
+                
               }
              </ul>
 
@@ -87,5 +84,7 @@ const Login = () =>{
         </>
   )
 }
+
+
 
 export default Login;
