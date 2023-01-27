@@ -35,7 +35,7 @@ const onHover = () => {
         
         </HeroP>
         <HeroBtnWrapper>
-          <Link to="/yourprojects">
+          <Link to="/login">
             <button to = 'Signup' onMouseEnter = {onHover} onMouseLeave = {onHover} onClick={()=>{
                 console.log("LOL")
             }}>

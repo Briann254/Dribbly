@@ -1,96 +1,121 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Encode Sans Expanded', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Encode Sans Expanded', sans-serif;
 }
 .App {
-  text-align: center;
+text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+height: 40vmin;
+pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+background-color: #282c34;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: calc(10px + 2vmin);
+color: white;
 }
 
 .App-link {
-  color: #61dafb;
+color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
 }
 
 
 #createProject{
-  border-radius: 20px;
-  
+border-radius: 20px;
+margin-left: 455px;
+margin-bottom: 40px;
+margin-top: 40px;
 }
 
 .img{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-left: 180px;
-  /* padding-right: 180px; */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding-left: 180px;
+/* padding-right: 180px; */
 }
 
 form input {
-  justify-content: space-between;
-  border-radius: 5px;
-  /* width: 85px; */
-  height: 35px;
+justify-content: space-between;
+border-radius: 5px;
+/* width: 85px; */
+height: 35px;
+margin-bottom: 40px;
 }
 
 button{
-  border-radius: 5px;
-  width: 75px;
-  height: 40px;
+border-radius: 5px;
+width: 75px;
+height: 40px;
 }
 
 .description{
-  width: 170px;
-  
+width: 170px;
+
 }
 
 .image-input{
-  width: 150px;
+width: 150px;
 }
 
 .title-input{
-  width: 90px;
+width: 90px;
 }
 
 .create-title{
-  width: 90px;
+width: 90px;
 }
 
 .create-description{
-  width: 210px;
+width: 210px;
 }
 
 .create-image{
-  width: 210px;
+width: 210px;
+}
+
+#input{
+  margin: 10px;
+}
+
+#sign-in{
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+}
+
+#log-in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sign{
+  margin-bottom: 400px;
+  margin-top: 39px;
+  margin-left: 70px;
 }

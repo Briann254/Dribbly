@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './components/Layout/pages';
 import YourProjects from './components/YourProjects';
 
+
   function App() {
   return (
 	<Router>
@@ -13,13 +14,9 @@ import YourProjects from './components/YourProjects';
    <Routes>
    <Route exact path="/" element={<Home /> }/>
     <Route path="/yourprojects" element={<YourProjects/>}/>
-   
+    <Route path="/login" element={<Login />}/>
+    <Route path="/logout" element={<Logout />}/>
     </Routes>
-    <main className="App">
-      <Login />
-      <Logout />
-    </main>
-
 	</Router>
   )
    
