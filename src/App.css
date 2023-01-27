@@ -46,6 +46,7 @@
 
 #createProject{
   border-radius: 20px;
+  
 }
 
 .img{
@@ -53,5 +54,43 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding-left: 180px;
+  /* padding-right: 180px; */
+}
+
+form input {
+  justify-content: space-between;
+  border-radius: 5px;
+  /* width: 85px; */
+  height: 35px;
+}
+
+button{
+  border-radius: 5px;
+  width: 75px;
+  height: 40px;
+}
+
+.description{
+  width: 170px;
   
+}
+
+.image-input{
+  width: 150px;
+}
+
+.title-input{
+  width: 90px;
+}
+
+.create-title{
+  width: 90px;
+}
+
+.create-description{
+  width: 210px;
+}
+
+.create-image{
+  width: 210px;
 }

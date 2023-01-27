@@ -32,6 +32,7 @@ function UpdateYourProject({ singleShot }) {
     <>
       <form onSubmit={handleSubmit}>
         <input
+        className="title-input"
           type="text"
           placeholder="Title"
           onChange={(e) => {
@@ -42,6 +43,7 @@ function UpdateYourProject({ singleShot }) {
           }}
         ></input>
         <input
+          className="description"
           type="text"
           placeholder="Description"
           onChange={(e) => {
@@ -52,6 +54,7 @@ function UpdateYourProject({ singleShot }) {
           }}
         ></input>
         <input
+        className="image-input"
           type="text"
           placeholder="enter new image url"
           onChange={(e) => {
@@ -61,7 +64,7 @@ function UpdateYourProject({ singleShot }) {
             });
           }}
         ></input>
-        <button type="submit">Update posts</button>
+        <button type="submit">Update post</button>
       </form>
     </>
   );

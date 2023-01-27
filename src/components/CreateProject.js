@@ -20,6 +20,7 @@ function CreateProject(props) {
     <div >
       <form onSubmit={handleSubmit} id='createProject'>
         <input
+        className="create-title"
           type="text"
           placeholder="Title"
           onChange={(e) => {
@@ -30,6 +31,7 @@ function CreateProject(props) {
           }}
         ></input>
         <input
+         className="create-description"
           type="text"
           placeholder="Description"
           onChange={(e) => {
@@ -40,6 +42,7 @@ function CreateProject(props) {
           }}
         ></input>
         <input
+        className="create-image"
           type="url"
           placeholder="Enter image url"
           onChange={(e) => {
