@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
+import React from "react";
+import { useContext } from "react";
+import { NavigationContext } from "../data/NavigationContext";
+import YourProjects from "./YourProjects";
 
+function Home(props) {
+  const [currentPage, setCurrentPage] = useContext(NavigationContext);
+  console.log(currentPage);
 
-function Home() {
-    const [username, setUsername] = useState('');
-    return (
-      <div>
-        <h1>Welcome to Dribbly</h1>
-        <p>Hello, {username}</p>
-        <form>
-          <label>
-            Name:
-            <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    )
-  }
+  return (
+    <div>
+      {/* <h1>Home page</h1>
+      <button onClick={() => setCurrentPage(<YourProjects />)} >
+        Go to your projects
+      </button> */}
+    </div>
+  );
+}
 
-export default Home
+export default Home;
