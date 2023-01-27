@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import React from "react";
 import { useContext } from "react";
 import { NavigationContext } from "../data/NavigationContext";
 import YourProjects from "./YourProjects";

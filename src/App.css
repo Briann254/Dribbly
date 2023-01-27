@@ -1,8 +1,8 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Encode Sans Expanded', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Encode Sans Expanded", sans-serif;
 }
 .App {
   text-align: center;
@@ -43,18 +43,20 @@
   }
 }
 
-
-#createProject{
+#createProject {
   border-radius: 20px;
-  
+  margin-left: 455px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
-.img{
+.img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding-left: 180px;
   /* padding-right: 180px; */
+  border-radius: 15px;
 }
 
 form input {
@@ -62,35 +64,72 @@ form input {
   border-radius: 5px;
   /* width: 85px; */
   height: 35px;
+  margin-bottom: 40px;
 }
 
-button{
+button {
   border-radius: 5px;
   width: 75px;
   height: 40px;
 }
 
-.description{
+.description {
   width: 170px;
-  
 }
 
-.image-input{
+.image-input {
   width: 150px;
 }
 
-.title-input{
+.title-input {
   width: 90px;
 }
 
-.create-title{
+.create-title {
   width: 90px;
 }
 
-.create-description{
+.create-description {
   width: 210px;
 }
 
-.create-image{
+.create-image {
   width: 210px;
+}
+
+#input {
+  margin: 10px;
+}
+
+#sign-in {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+}
+
+#log-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sign {
+  margin-bottom: 400px;
+  margin-top: 39px;
+  margin-left: 70px;
+}
+
+#sign-up {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#signup {
 }

@@ -30,7 +30,7 @@ function UpdateYourProject({ singleShot }) {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} id="input">
         <input
         className="title-input"
           type="text"
@@ -64,7 +64,7 @@ function UpdateYourProject({ singleShot }) {
             });
           }}
         ></input>
-        <button type="submit">Update post</button>
+        <button type="submit">Update</button>
       </form>
     </>
   );
