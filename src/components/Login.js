@@ -76,7 +76,7 @@ const Login = () =>{
         Want to join our community? <br />
         <span className="line">
           {/*put router link here*/}
-          <a href="#">Sign Up</a>
+          <button>Sign Up</button>
         </span>
       </p>
     </section>
