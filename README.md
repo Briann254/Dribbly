@@ -46,7 +46,7 @@
 
 - Node Version: 14.17.4 and above
 
-- Author:
+- Authors:
 
     - [Ismahan Abdirizak] (https://github.com/ismahaneyy)
     - Brian Nderitu 
