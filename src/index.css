@@ -1,61 +1,12 @@
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css?family=Rubik');
-
-$pink: #ea4c89;
-
-
-html,
 body {
-  padding: 0;
-  margin: 0;
-  background: whitesmoke;
-  font-family: "Rubik";
-  font-size: 15px;
-}
-
-#shots {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1080px;
-  margin: auto;
-  
-  .shot {
-    position: relative;
-    display: block;
-    width: 25%;
-    background: $pink;
-    color: white;
-    text-decoration: none;
-    
-    &:hover {
-      img {
-        opacity: .1;
-      }
-      .title {
-        opacity: 1;
-      }
-    }
-    
-    .title {
-      position: absolute;
-      width: calc(100% - 2rem);
-      padding: 1rem;
-      opacity: 0;
-      transition: opacity .2s ease-in-out;
-      font-size: 1rem;
-      font-weight: 500;
-      letter-spacing: 1px;
-    }
-
-    img {
-      display: block;
-      max-width: 100%;
-      transition: opacity .2s ease-in-out;
-    }
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-}
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
