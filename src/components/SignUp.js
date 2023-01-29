@@ -6,36 +6,38 @@ function SignUp(props) {
     function handleSubmit(e){
     }
     return (
-        <form onSubmit={handleSubmit} action="/yourprojects">
-        <label htmlFor="username">
-          Username:
+      <>
+         
+        <form onSubmit={handleSubmit} action="/yourprojects" className='signup'>
+        <h2 className='sign'>Sign Up</h2> 
+        <label htmlFor="Enter Username">
         <input
           type="text"
-          id=""
-          autoComplete="off"
+          placeholder='Username'
           required
         />
-        </label>
-        <label htmlFor="email">
-          email:
-        <input
-          type="email"
-          id=""
-          autoComplete="off"
-          required
-        />
-        </label>
+        </label>   
         <label htmlFor="password">
-        Password:
         <input
           type="password"
+          placeholder='Password'
           id="password"
           required
         />
-        </label>       
-        <button type="submit">Sign Up</button>
-       
+        </label>      
+        <label htmlFor="email">
+        <input
+          type="email"
+          placeholder='email'
+          id=""
+          autoComplete="off"
+          required
+        />
+        </label>
+           
+        <button type="submit">Sign Up</button>   
       </form>
+    </>
     );
 }
 
