@@ -71,7 +71,7 @@ function YourProjects(props) {
         <h3 className="bio">{logged.bio}</h3>
        
         </div>
-        <Link exact to='/'>
+        <Link exact to='/' target='_self'>
         <button className="logout-btn">LogOut</button>
          </Link>
         </div>
