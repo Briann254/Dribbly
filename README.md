@@ -35,15 +35,16 @@
 
     - Change directory to the repo folder:
 
-    - cd bot-battlr
+    - cd Dribbly
 
     - Open it in Visual Studio Code
         - code .
+
     - npm start to install all the dependancies    
 
-Version: v0.1.0
+- Version: v0.1.0
 
-Node Version: 14.17.4 and above
+- Node Version: 14.17.4 and above
 
 - Author:
 
