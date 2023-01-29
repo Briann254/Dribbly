@@ -1,65 +1,48 @@
 # Dribbly
 
-Dribbly is an application similar to Dribbble that allows users to showcase their technical talents such as product design, computer programming, etc. The application uses the Dribbble API to access the data and functionalities of the platform.
+Dribbly is an application similar to Dribbble that allows users to showcase their technical talents such as product design, computer programming, etc. The application uses the Dribbble API to access the data and functionalities of the platform.The UserContext component used context to fetch data from server and make it available to the whole page  and passed the state as the value to be used by the application. THe YourProjectsContext component as well passed the state as the value to be used by the application and used context to fetch data from server and make it available to the whole page same as the NavigationContext component. UpdateYourProject component is used to house the form input for uses to change a shot. ViewProjects component is used to map through all shots. YourProjects components is used to display all the CreateProject component and ViewsProject component it also displays the form for sign in. The signUp component is used to hold a form for signing up to the page. The deletePosts component is used to hold data for deleting a shot. CreateProjects component is used to displaya form for adding a shot to the page. 
 
-## Features
-- Home page that provides information about the application
-- User registration and login
-- Profile view
-- Project creation, update, deletion and view
-- Logout feature
-- Shot creation, update, deletion and view (extra deliverable)
-- Job posting creation, update, deletion and view (extra deliverable)
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## REQUIREMENTS FOR USE
 
 ### Prerequisites
-- Node.js
-- npm or yarn
-- Dribbble API developer account and API key
 
-### Installing
+- For you to use the content on this repo ensure you have the following:
 
-1. Clone the repository
-git clone git@github.com:Briann254/Dribbly.git
+    - node v14.17.4 and above
+    - A computer that runs on either of the following; (Linux, Mac OS and Windows)
+    - nodejs 9.0+
+    - npm 6.14.14 and above
+    - Vue 2.6.11- Status:
+    - Version: - v0.1.0
+    - Setup instructions
+    - Dribbble API developer account and API key
 
-Copy code
+- To use this repository on your machine requires some simple steps:
 
-2. Install dependencies
-npm install
+   - Open a terminal / command line interface on your computer
 
-Copy code
-or
-yarn
+    - Clone the repo by using the following to create a copy on your local machine: "git clone git@github.com:Briann254/Dribbly.git"
 
-Copy code
+    - Change directory to the repo folder:
 
-3. Create a .env file and add your Dribbble API key as `REACT_APP_DRIBBLE_API_KEY=[your_api_key]`
+    - cd bot-battlr
 
-4. Start the development server
-npm start
+    - Open it in Visual Studio Code
+        - code .
+    - npm start to install all the dependancies    
 
-Copy code
-or
-yarn start
+Version: v0.1.0
 
-Copy code
+Node Version: 14.17.4 and above
 
-5. The application will be running on [http://localhost:3000](http://localhost:3000)
+- Author:
 
-### Deployment
+    - Ismahan Abdirizak
 
-This project is ready to be deployed to any hosting platform such as Heroku, Firebase, etc.
+- Initial work - [Briann254] "https://github.com/briann254"
 
-## Built With
+- License
 
-- [React](https://reactjs.org/) - JavaScript library for building user interfaces
-- [Dribbble API](https://developer.dribbble.com/v2/) - API for accessing Dribbble data and functionalities
-- [axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
+   - This project is licensed under the MIT License
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
