@@ -1,42 +1,30 @@
-import {  useState, useEffect, } from 'react'
+import { useState, useEffect } from "react";
 
-
-const Logout = () =>{
- 
-
+const Logout = () => {
+  // setting the state to false 
   const [success, setSuccess] = useState(false);
-
-  useEffect(()=> {
-
-  }, [])
-  
   const handleSubmit = async (e) => {
-      e.preventDefault();
-     
-      setSuccess(true)
-      
-      }
+    e.preventDefault();
+
+    setSuccess(true);
+  };
   return (
     <>
-        {success ? (
-          <section>
-             <h1>You are successfully logged out</h1>
-             <br />
-              </section>
-        ) : (
-    <section>
-     
-      <h1> Log Out</h1>
-      <form onSubmit={handleSubmit}>
-                <button>Log Out</button>
-      </form >
-      <p>
-        Live, Learn and Laugh <br />
-    </p>
-    </section>
-        )}
-        </>
-  ) 
-}
+      {success ? (
+        <section>
+          <h1>You are successfully logged out</h1>
+          <br />
+        </section>
+      ) : (
+        <section>
+          <h1> Log Out</h1>
+          <form onSubmit={handleSubmit}>
+            <button>Log Out</button>
+          </form>
+        </section>
+      )}
+    </>
+  );
+};
 
 export default Logout;

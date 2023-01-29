@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { useContext } from "react";
 import { YourProjectsDataContext } from "../data/YourProjectsContext";
+
 function CreateProject(props) {
+  // using context that houses the data from yourProjectsContext
   const [projectsData, setProjeData] = useContext(YourProjectsDataContext);
+  // uses the state false
+  const [display, setDisplay] = useState(false)
   const [posts, setPosts] = useState({
     id: 0,
     title: "",
@@ -10,18 +14,23 @@ function CreateProject(props) {
     images: { normal: "" },
   });
   console.log(projectsData);
+  // changes state to false
   function handleSubmit(e) {
     e.preventDefault();
+    setDisplay(false)
     setProjeData([posts, ...projectsData]);
   }
   console.log(setPosts);
 
+// uses if else statement when a user clicks the link it displays a form to add a new shot
   return (
-    <div >
-      <form onSubmit={handleSubmit} id='createProject'>
+    display ?
+    <div>
+      <form onSubmit={handleSubmit} id="createProject">
         <input
-        className="create-title"
+          className="create-title"
           type="text"
+          required
           placeholder="Title"
           onChange={(e) => {
             setPosts({
@@ -31,8 +40,9 @@ function CreateProject(props) {
           }}
         ></input>
         <input
-         className="create-description"
+          className="create-description"
           type="text"
+          required
           placeholder="Description"
           onChange={(e) => {
             setPosts({
@@ -41,9 +51,9 @@ function CreateProject(props) {
             });
           }}
         ></input>
-        <input
-        className="create-image"
+        <input      
           type="url"
+          required
           placeholder="Enter image url"
           onChange={(e) => {
             setPosts({
@@ -64,6 +74,15 @@ function CreateProject(props) {
         </button>
       </form>
     </div>
+    :
+// displays a link as default 
+    <a
+    href="#"
+    className="create-btn"
+     onClick={()=>{
+      setDisplay(true)
+    
+    }}>Want to add a new Post?</a>
   );
 }
 
