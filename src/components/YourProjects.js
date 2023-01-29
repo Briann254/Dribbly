@@ -69,10 +69,10 @@ function YourProjects(props) {
         <h2 className="username">{logged.name}</h2>
         <div className="bio-sec">
         <h3 className="bio">{logged.bio}</h3>
-        <button className="logout-btn">LogOut</button>
+       
         </div>
         <Link exact to='/'>
-         
+        <button className="logout-btn">LogOut</button>
          </Link>
         </div>
       </div>
