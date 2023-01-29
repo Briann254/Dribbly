@@ -1,6 +1,15 @@
 # Dribbly
+- Link to deployed site https://dribbly-29v026hc6-ismahaneyy.vercel.app/
 
-Dribbly is an application similar to Dribbble that allows users to showcase their designs. The application uses the Dribbble API to access the data and functionalities of the platform.The UserContext component used context to fetch data from server and make it available to the whole page  and passed the state as the value to be used by the application. THe YourProjectsContext component as well passed the state as the value to be used by the application and used context to fetch data from server and make it available to the whole page same as the NavigationContext component. UpdateYourProject component is used to house the form input for uses to change a shot. ViewProjects component is used to map through all shots. YourProjects components is used to display all the CreateProject component and ViewsProject component it also displays the form for sign in. The signUp component is used to hold a form for signing up to the page. The deletePosts component is used to hold data for deleting a shot. CreateProjects component is used to displaya form for adding a shot to the page. 
+- Dribbly is an application similar to Dribbble that allows users to showcase their designs. 
+- The application uses the Dribbble API to access the data and functionalities of the platform.
+- The UserContext component used context to fetch data from server and make it available to the whole page  and passed the state as the value to be used by the application. 
+- The YourProjectsContext component as well passed the state as the value to be used by the application and used context to fetch data from server and make it available to the whole page same as the NavigationContext component. 
+- UpdateYourProject component is used to house the form input for uses to change a shot. ViewProjects component is used to map through all shots. 
+- YourProjects components is used to display all the CreateProject component and ViewsProject component it also displays the form for sign in. 
+- The signUp component is used to hold a form for signing up to the page. 
+- The deletePosts component is used to hold data for deleting a shot. 
+- CreateProjects component is used to displaya form for adding a shot to the page. 
 
 ## REQUIREMENTS FOR USE
 
