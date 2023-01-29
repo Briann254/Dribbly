@@ -1,5 +1,6 @@
 # Dribbly
-- Link to deployed site https://dribbly-29v026hc6-ismahaneyy.vercel.app/
+- Link to deployed site:
+       - https://dribbly-1iylx9kx7-ismahaneyy.vercel.app/
 
 - Dribbly is an application similar to Dribbble that allows users to showcase their designs. 
 - The application uses the Dribbble API to access the data and functionalities of the platform.
